@@ -10,7 +10,7 @@ https://github.com/andrewcampagnagit/dolphin
 2. Run dolphin deployment
 
 ```bash
-dolphin deploy -mG https://raw.github.ibm.com/Andrew-Campagna/cp4s_dolphin/master/manifest.json?token=AACDEXJ3DA2OMDYDES55KITAIBZ24
+dolphin deploy -mG https://raw.githubusercontent.com/andrewcampagnagit/cp4s_dolphin/main/manifest.json
 ```
 
 #### Verification
