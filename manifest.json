@@ -1,4 +1,4 @@
 {
-	"instructions_url":"https://raw.github.ibm.com/Andrew-Campagna/cp4s_dolphin/master/instructions.json?token=AACDEXIJKCR6PGNUKOOGHP3AIBY7U",
-	"var_url":"https://raw.github.ibm.com/Andrew-Campagna/cp4s_dolphin/master/data/vars.json?token=AACDEXPE2XANOKPLRSRU42TAIBZAW"
+	"instructions_url":"https://raw.githubusercontent.com/andrewcampagnagit/cp4s_dolphin/main/instructions.json,
+	"var_url":"https://raw.githubusercontent.com/andrewcampagnagit/cp4s_dolphin/main/instructions.json"
 }
