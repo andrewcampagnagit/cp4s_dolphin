@@ -1,0 +1,8 @@
+{
+	"helm-cli-dl-url":"https://get.helm.sh/helm-v3.2.4-linux-amd64.tar.gz",
+	"helm-cli-tar":"helm-v3.2.4-linux-amd64.tar.gz",
+	"helm-bin-name": "helm",
+	"cloudctl-cli-dl-url": "https://github.com/IBM/cloud-pak-cli/releases/download/v3.7.0/cloudctl-linux-amd64.tar.gz",
+	"cloudctl-cli-tar": "cloudctl-linux-amd64.tar.gz",
+	"cloudctl-bin-name": "cloudctl-linux-amd64"
+}

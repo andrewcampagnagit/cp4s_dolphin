@@ -1,0 +1,224 @@
+{
+    "settings": {
+        "mode": "kubectl",
+        "varpath": "data/"
+    },
+    "meta": {
+        "name": "cp4s_1_6"
+    },
+    "blocks": [
+
+        {
+            "type": "shell",
+            "cmd": "echo \"IBM Entitlement key can be copied from: https://myibm.ibm.com/products-services/containerlibrary\"",
+
+            "vars": {
+                "entitlement-key": {
+                    "type":"prompt",
+                    "msg":"Enter your IBM Entitlement key"
+                }
+            }
+        },
+
+        {
+            "type": "shell",
+            "cmd": "echo \"IBM Cloud Pak® for Security requires an FQDN see details here: https://www.ibm.com/support/knowledgecenter/SSTDPP_1.6.0/platform/docs/security-pak/install_chart.html\"",
+
+            "vars": {
+                "cp4s-fqdn": {
+                    "type":"prompt",
+                    "msg":"Enter your CP4S FQDN"
+                }
+            }
+        },
+
+        {
+            "type": "shell",
+            "cmd": "mkdir ibm"
+        }
+
+        {
+            "type": "shell",
+            "cmd": "wget %helm-cli-dl-url%; tar -xvf %helm-cli-tar%; mv %helm-bin-name% /usr/local/bin/helm3"
+        },
+
+        {
+            "type": "shell",
+            "cmd": "wget %cloudctl-cli-dl-url%; tar -xvf %cloudctl-cli-tar%; mv %cloudctl-bin-name% /usr/local/bin/cloudctl"
+        },
+
+        {
+            "type": "shell",
+            "cmd": "cloudctl case save -t 1 --case https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-cp-security-1.0.14.tgz --outputdir ./ibm; tar -xf ./ibm/ibm-cp-security-1.0.14.tgz"
+        }
+
+    ],
+
+    "tests": [
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[0].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[1].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[2].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[3].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[4].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[5].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[6].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[7].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[8].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[9].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[10].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[11].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[12].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[13].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[14].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[15].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[16].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[17].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[18].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[19].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[20].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[21].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[22].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[23].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[24].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[25].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[26].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[27].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[28].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[29].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[30].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[31].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[32].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        }
+    ]
+}
