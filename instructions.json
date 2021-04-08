@@ -166,10 +166,179 @@
             "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
             "yamlpath": "$.adminUserId",
             "value": "platform-admin"
+        },
+
+        {
+            "type": "kubectl.shell",
+            "cmd": "cloudctl case launch -t 1 --case ibm-cp-security --namespace cp4s  --inventory installProduct --action install --args \"--license accept --helm3 /usr/local/bin/helm3 --inputDir .\""
         }
     ],
 
     "tests": [
-        
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[0].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[1].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[2].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[3].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[4].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[5].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[6].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[7].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[8].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[9].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[10].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[11].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[12].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[13].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[14].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[15].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[16].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[17].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[18].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[19].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[20].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[21].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[22].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[23].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[24].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[25].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[26].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[27].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[28].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[29].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[30].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[31].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        },
+
+        {
+            "script": "oc get iscsequence -o jsonpath=\"{.items[32].status.conditions[0].reason}\"",
+            "expected_result": "Successful"
+        }
     ]
 }
