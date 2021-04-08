@@ -8,7 +8,7 @@
     "blocks": [
 
         {
-            "type": "kuectl.shell",
+            "type": "kubectl.shell",
             "cmd": "echo \"IBM Entitlement key can be copied from: https://myibm.ibm.com/products-services/containerlibrary\"",
 
             "vars": {
