@@ -81,36 +81,6 @@
 
         {
             "type": "kubectl.shell",
-            "cmd": "wget %helm-cli-dl-url%"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "tar -xvf %helm-cli-tar%;"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "cp %helm-bin-name% /usr/local/bin/helm3"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "wget %cloudctl-cli-dl-url%"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "tar -xvf %cloudctl-cli-tar%"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "cp %cloudctl-bin-name% /usr/local/bin/cloudctl"
-        },
-
-        {
-            "type": "kubectl.shell",
             "cmd": "cloudctl case save -t 1 --case https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-cp-security-1.0.15.tgz --outputdir ."
         },
 
