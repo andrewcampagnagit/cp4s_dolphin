@@ -91,6 +91,11 @@
 
         {
             "type":"kubectl.shell",
+            "cmd":"cp cloudctl-linux-amd64 /usr/local/bin/cloudctl"
+        },
+
+        {
+            "type":"kubectl.shell",
             "cmd":"curl -LO https://get.helm.sh/helm-v3.5.4-linux-amd64.tar.gz"
         },
 
@@ -101,7 +106,7 @@
 
         {
             "type":"kubectl.shell",
-            "cmd":"ln -s /usr/local/bin/helm3 /usr/local/bin/helm"
+            "cmd":"cp linux-amd64/helm /usr/local/bin/helm3"
         },
 
         {
