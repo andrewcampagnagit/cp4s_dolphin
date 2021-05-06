@@ -116,7 +116,7 @@
 
         {
             "type": "kubectl.shell",
-            "cmd": "tar -xf ./ibm/ibm-cp-security-1.0.15.tgz"
+            "cmd": "tar xvf ibm-cp-security-1.0.15.tgz"
         },
 
         {
