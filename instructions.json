@@ -1,9 +1,11 @@
 {
     "settings": {
-        "varpath": "data/"
-    },
-    "meta": {
-        "name": "cp4s_1_6"
+        "varpath": "data/",
+        "meta": {
+            "name":"IBM Cloud Pak for Security",
+            "shortName":"CP4S",
+            "version":"1.0.6"
+        }
     },
     "blocks": [
 
