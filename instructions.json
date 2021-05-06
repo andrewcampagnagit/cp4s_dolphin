@@ -123,49 +123,49 @@
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.cp4sapplicationDomain",
             "value": "%cp4s-fqdn%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.cp4sdomainCertificatePath",
             "value": "%cp4s-tls-cert%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.cp4sdomainCertificateKeyPath",
             "value": "%cp4s-tls-key%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.cp4scustomcaFilepath",
             "value": "%cp4s-tls-ca%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.entitledRegistryPassword",
             "value": "%entitlement-key%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.storageClass",
             "value": "%cp4s-sc%"
         },
 
         {
             "type": "config.write.yaml",
-            "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
+            "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "yamlpath": "$.adminUserId",
             "value": "platform-admin"
         }
