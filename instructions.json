@@ -166,11 +166,6 @@
             "filepath": "./ibm-cp-security/inventory/installProduct/values.conf",
             "yamlpath": "$.adminUserId",
             "value": "platform-admin"
-        },
-
-        {
-            "type": "kubectl.shell",
-            "cmd": "cloudctl case launch -t 1 --case ibm-cp-security --namespace cp4s  --inventory installProduct --action install --args \"--license accept --helm3 /usr/local/bin/helm3 --inputDir .\""
         }
     ],
 

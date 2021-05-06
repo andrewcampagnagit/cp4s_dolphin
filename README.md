@@ -5,6 +5,8 @@ Dolphin deployment for CP4S
 
 1. Download dolphin onto target installation machine
 
+**Note:** Only use beta-4 release of dolphin or higher only for ConfigBlock & OpenShiftBlock processors and multi-mode processor selection support.
+
 https://github.com/andrewcampagnagit/dolphin
 
 2. Run dolphin deployment
