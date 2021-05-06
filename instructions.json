@@ -91,7 +91,7 @@
 
         {
             "type":"kubectl.shell",
-            "cmd":"cp cloudctl-linux-amd64 /usr/local/bin/cloudctl"
+            "cmd":"sudo cp cloudctl-linux-amd64 /usr/local/bin/cloudctl"
         },
 
         {
@@ -106,7 +106,7 @@
 
         {
             "type":"kubectl.shell",
-            "cmd":"cp linux-amd64/helm /usr/local/bin/helm3"
+            "cmd":"sudo cp linux-amd64/helm /usr/local/bin/helm3"
         },
 
         {
