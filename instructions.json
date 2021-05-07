@@ -124,49 +124,49 @@
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.cp4sapplicationDomain",
+            "tomlpath": "$.cp4sapplicationDomain",
             "value": "%cp4s-fqdn%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.cp4sdomainCertificatePath",
+            "tomlpath": "$.cp4sdomainCertificatePath",
             "value": "%cp4s-tls-cert%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.cp4sdomainCertificateKeyPath",
+            "tomlpath": "$.cp4sdomainCertificateKeyPath",
             "value": "%cp4s-tls-key%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.cp4scustomcaFilepath",
+            "tomlpath": "$.cp4scustomcaFilepath",
             "value": "%cp4s-tls-ca%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.entitledRegistryPassword",
+            "tomlpath": "$.entitledRegistryPassword",
             "value": "%entitlement-key%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.storageClass",
+            "tomlpath": "$.storageClass",
             "value": "%cp4s-sc%"
         },
 
         {
             "type": "config.write.toml",
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
-            "yamlpath": "$.adminUserId",
+            "tomlpath": "$.adminUserId",
             "value": "platform-admin"
         }
     ],
