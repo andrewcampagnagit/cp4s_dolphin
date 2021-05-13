@@ -4,7 +4,7 @@
         "meta": {
             "name":"IBM Cloud Pak for Security",
             "shortName":"CP4S",
-            "version":"1.0.6"
+            "version":"1.0.7"
         }
     },
     "blocks": [
@@ -113,7 +113,7 @@
 
         {
             "type": "kubectl.shell",
-            "cmd": "cloudctl case save -t 1 --case https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-cp-security-1.0.15.tgz --outputdir ."
+            "cmd": "cloudctl case save -t 1 --case https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-cp-security-1.0.16.tgz --outputdir ."
         },
 
         {
@@ -168,6 +168,11 @@
             "filepath": "./ibm-cp-security/inventory/installProduct/files/values.conf",
             "tomlpath": "$.adminUserId",
             "value": "platform-admin"
+        },
+
+        {
+            "type": "kubectl.shell",
+            "cmd": "cloudctl case launch -t 1 --case ibm-cp-security --namespace cp4s  --inventory installProduct --action install --args \"--license accept --helm3 /usr/local/bin/helm3 --inputDir .\""
         }
     ],
 
