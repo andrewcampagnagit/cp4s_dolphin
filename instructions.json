@@ -173,7 +173,7 @@
         {
             "type":"kubectl.shell",
             "cmd":"cat ./ibm-cp-security/inventory/installProduct/files/values.conf | tr -d \"[:blank:]\""
-        }
+        },
 
         {
             "type": "kubectl.shell",
