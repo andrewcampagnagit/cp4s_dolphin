@@ -171,6 +171,11 @@
         },
 
         {
+            "type":"kubectl.shell",
+            "cmd":"cat ./ibm-cp-security/inventory/installProduct/files/values.conf | tr -d \"[:blank:]\""
+        }
+
+        {
             "type": "kubectl.shell",
             "cmd": "cloudctl case launch -t 1 --case ibm-cp-security --namespace cp4s  --inventory installProduct --action install --args \"--license accept --helm3 /usr/local/bin/helm3 --inputDir .\""
         }
